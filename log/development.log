@@ -7677,3 +7677,827 @@ Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 15:38:00 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 15:38:00 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 15:44:59 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (7.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35mCACHE (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36mCACHE (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 277ms (Views: 139.0ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 15:45:00 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-10-19 15:45:00 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 15:45:00 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-19 15:45:00 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 15:45:00 -0700
+
+
+Started GET "/assets/votes.css?body=1" for 127.0.0.1 at 2013-10-19 15:45:00 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 15:45:00 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-19 15:45:00 -0700
+
+
+Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 15:45:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 15:45:00 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 15:45:47 -0700
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 24ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 15:45:47 -0700
+
+
+Started GET "/assets/votes.css?body=1" for 127.0.0.1 at 2013-10-19 15:45:47 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-19 15:45:47 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-10-19 15:45:47 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 15:45:47 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 15:45:47 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 15:45:47 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-19 15:45:47 -0700
+
+
+Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 15:45:47 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 15:45:47 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 15:49:03 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 24ms (Views: 18.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-10-19 15:49:03 -0700
+
+
+Started GET "/assets/votes.css?body=1" for 127.0.0.1 at 2013-10-19 15:49:03 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 15:49:03 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-19 15:49:03 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 15:49:03 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 15:49:03 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 15:49:03 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-19 15:49:03 -0700
+
+
+Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 15:49:03 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 15:49:04 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 15:53:15 -0700
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 22ms (Views: 17.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/votes.css?body=1" for 127.0.0.1 at 2013-10-19 15:53:15 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-19 15:53:15 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-10-19 15:53:15 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 15:53:15 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 15:53:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 15:53:16 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 15:53:16 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-19 15:53:16 -0700
+
+
+Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 15:53:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 15:53:16 -0700
+
+
+Started GET "/topics/4" for 127.0.0.1 at 2013-10-19 15:53:18 -0700
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "4"]]
+  Rendered topics/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 22ms (Views: 18.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/topics/4/edit" for 127.0.0.1 at 2013-10-19 15:53:21 -0700
+Processing by TopicsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  Rendered topics/_form.html.erb (62.0ms)
+  Rendered topics/edit.html.erb within layouts/application (91.0ms)
+Completed 200 OK in 105ms (Views: 102.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 15:53:22 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 34ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 15:59:08 -0700
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (2.0ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 57ms (Views: 19.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 15:59:08 -0700
+
+
+Started GET "/assets/votes.css?body=1" for 127.0.0.1 at 2013-10-19 15:59:08 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-10-19 15:59:08 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 15:59:08 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-19 15:59:08 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 15:59:08 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 15:59:08 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-19 15:59:08 -0700
+
+
+Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 15:59:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 15:59:08 -0700
+
+
+Started GET "/topics/new" for 127.0.0.1 at 2013-10-19 15:59:10 -0700
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (4.0ms)
+  Rendered topics/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 15:59:13 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 38ms (Views: 26.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/topics/new" for 127.0.0.1 at 2013-10-19 16:00:34 -0700
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (3.0ms)
+  Rendered topics/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 16:00:38 -0700
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 35ms (Views: 26.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 16:02:00 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36mCACHE (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (47.0ms)
+Completed 500 Internal Server Error in 60ms
+
+ActionView::Template::Error (undefined local variable or method `about_path' for #<#<Class:0x479e170>:0x490af70>):
+    27: 
+    28: <%= link_to 'New Topic', new_topic_path %>
+    29: 
+    30: <%= link_to 'About', about_path %>
+  app/views/topics/index.html.erb:30:in `_app_views_topics_index_html_erb___1020781817_39923208'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (34.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 16:02:17 -0700
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (17.0ms)
+Completed 500 Internal Server Error in 37ms
+
+ActionView::Template::Error (undefined local variable or method `about_path' for #<#<Class:0x479e170>:0x4c2b1f0>):
+    27: 
+    28: <%= link_to 'New Topic', new_topic_path %>
+    29: 
+    30: <%= link_to 'About', about_path %>
+  app/views/topics/index.html.erb:30:in `_app_views_topics_index_html_erb___1020781817_39923208'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (25.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 16:02:33 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 28ms (Views: 22.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 16:02:33 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-19 16:02:33 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-10-19 16:02:33 -0700
+
+
+Started GET "/assets/votes.css?body=1" for 127.0.0.1 at 2013-10-19 16:02:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 16:02:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 16:02:33 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 16:02:33 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-19 16:02:34 -0700
+
+
+Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 16:02:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 16:02:34 -0700
+
+
+Started GET "/topics/new" for 127.0.0.1 at 2013-10-19 16:02:36 -0700
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (5.0ms)
+  Rendered topics/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 16:02:37 -0700
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 29ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics/new" for 127.0.0.1 at 2013-10-19 16:02:42 -0700
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (3.0ms)
+  Rendered topics/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 15ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 16:02:43 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 40ms (Views: 18.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/topics/new" for 127.0.0.1 at 2013-10-19 16:04:52 -0700
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (3.0ms)
+  Rendered topics/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 16:04:54 -0700
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 33ms (Views: 22.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/topics/new" for 127.0.0.1 at 2013-10-19 16:05:43 -0700
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (5.0ms)
+  Rendered topics/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 16:05:45 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 38ms (Views: 33.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/topics/new" for 127.0.0.1 at 2013-10-19 16:05:46 -0700
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (4.0ms)
+  Rendered topics/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 16:05:47 -0700
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 28ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 16:06:25 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 25ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/votes.css?body=1" for 127.0.0.1 at 2013-10-19 16:06:25 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-10-19 16:06:25 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-19 16:06:25 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 16:06:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 16:06:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 16:06:26 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 16:06:26 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-19 16:06:26 -0700
+
+
+Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 16:06:26 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 16:06:26 -0700
+
+
+Started GET "/topics/new" for 127.0.0.1 at 2013-10-19 16:06:27 -0700
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (5.0ms)
+  Rendered topics/new.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 16:06:28 -0700
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 26ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 16:06:41 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 25ms (Views: 18.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-19 16:06:41 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 16:06:41 -0700
+
+
+Started GET "/assets/votes.css?body=1" for 127.0.0.1 at 2013-10-19 16:06:41 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-10-19 16:06:41 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 16:06:41 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 16:06:41 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 16:06:41 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-19 16:06:41 -0700
+
+
+Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 16:06:41 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 16:06:41 -0700
+
+
+Started GET "/topics/new" for 127.0.0.1 at 2013-10-19 16:06:42 -0700
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (5.0ms)
+  Rendered topics/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 16:06:44 -0700
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 21ms (Views: 17.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/topics/new" for 127.0.0.1 at 2013-10-19 16:07:15 -0700
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (3.0ms)
+  Rendered topics/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 16:07:16 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 30ms (Views: 19.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/topics/3" for 127.0.0.1 at 2013-10-19 16:07:33 -0700
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered topics/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 16:07:33 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35mCACHE (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 39ms (Views: 26.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/topics/new" for 127.0.0.1 at 2013-10-19 16:07:35 -0700
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (3.0ms)
+  Rendered topics/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 16:07:36 -0700
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 36ms (Views: 25.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 16:12:13 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 27ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 16:12:14 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 16:12:14 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-10-19 16:12:14 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-19 16:12:14 -0700
+
+
+Started GET "/assets/votes.css?body=1" for 127.0.0.1 at 2013-10-19 16:12:14 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 16:12:14 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 16:12:14 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-19 16:12:14 -0700
+
+
+Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 16:12:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 16:12:14 -0700
+
+
+Started GET "/topics/new" for 127.0.0.1 at 2013-10-19 16:12:16 -0700
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (3.0ms)
+  Rendered topics/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 16:12:17 -0700
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 21ms (Views: 16.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 16:14:43 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 45ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 16:14:44 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-19 16:14:44 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 16:14:44 -0700
+
+
+Started GET "/assets/votes.css?body=1" for 127.0.0.1 at 2013-10-19 16:14:44 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-10-19 16:14:44 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 16:14:44 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 16:14:44 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-19 16:14:44 -0700
+
+
+Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 16:14:44 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 16:14:44 -0700
