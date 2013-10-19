@@ -7632,3 +7632,48 @@ Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 15:35:06 -0700
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 15:35:06 -0700
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 15:38:00 -0700
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 44ms (Views: 36.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/votes.css?body=1" for 127.0.0.1 at 2013-10-19 15:38:00 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-10-19 15:38:00 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-19 15:38:00 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 15:38:00 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 15:38:00 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 15:38:00 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-19 15:38:00 -0700
+
+
+Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 15:38:00 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 15:38:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 15:38:00 -0700
