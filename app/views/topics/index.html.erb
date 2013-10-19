@@ -1,0 +1,28 @@
+<h1>Amazing Stuff</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @topics.each do |topic| %>
+      <tr>
+        <td><%= link_to topic.title, topic %></td>
+        <td><%= pluralize(topic.votes.count, "vote") %></td>
+        <td><%= button_to '+1', votes_path(topic_id: topic.id), method: :post %></td>
+        <td><%= button_to '-1', vote_path([:id], topic_id: topic.id), method: :delete %></td>
+        <td><%= link_to 'delete', topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Topic', new_topic_path %>
