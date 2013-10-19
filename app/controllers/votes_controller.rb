@@ -7,7 +7,7 @@ class VotesController < ApplicationController
   end
   def destroy
     topic = Topic.find(params[:topic_id])
-    vote = topic.votes.first.delete
+    vote = topic.votes.first.delete unless topic.votes.first == nil
     redirect_to(topics_path)
   end
 end

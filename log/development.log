@@ -5547,3 +5547,695 @@ Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 14:32:34 -0700
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 14:32:35 -0700
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 14:47:22 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  Rendered topics/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 26ms (Views: 23.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-19 14:47:22 -0700
+
+
+Started GET "/assets/votes.css?body=1" for 127.0.0.1 at 2013-10-19 14:47:22 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-10-19 14:47:22 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 14:47:22 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 14:47:22 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 14:47:22 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 14:47:22 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-19 14:47:22 -0700
+
+
+Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 14:47:23 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 14:47:23 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 15:00:02 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  Rendered topics/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 46ms (Views: 23.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/votes.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:02 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:02 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:02 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:03 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:03 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:03 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:03 -0700
+
+
+Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:03 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:03 -0700
+
+
+Started GET "/topics/new" for 127.0.0.1 at 2013-10-19 15:00:07 -0700
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (3.0ms)
+  Rendered topics/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/topics" for 127.0.0.1 at 2013-10-19 15:00:16 -0700
+Processing by TopicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yXe3j9qfAsCykINQqnCvGBqpzPTC7xZmRdU3lv1i6z8=", "topic"=>{"title"=>"bears", "description"=>"Bears are huggable!"}, "commit"=>"Create Topic"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "topics" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 19 Oct 2013 22:00:16 UTC +00:00], ["description", "Bears are huggable!"], ["title", "bears"], ["updated_at", Sat, 19 Oct 2013 22:00:16 UTC +00:00]]
+  [1m[35m (8.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 24ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 15:00:16 -0700
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 22ms (Views: 19.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:16 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:16 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:16 -0700
+
+
+Started GET "/assets/votes.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:16 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:16 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:16 -0700
+
+
+Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:17 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:17 -0700
+
+
+Started DELETE "/votes/id?topic_id=4" for 127.0.0.1 at 2013-10-19 15:00:18 -0700
+Processing by VotesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yXe3j9qfAsCykINQqnCvGBqpzPTC7xZmRdU3lv1i6z8=", "topic_id"=>"4", "id"=>"id"}
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mVote Load (1.0ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."topic_id" = ? ORDER BY "votes"."id" ASC LIMIT 1[0m  [["topic_id", 4]]
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 10ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 15:00:18 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 28ms (Views: 24.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:19 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:19 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:19 -0700
+
+
+Started GET "/assets/votes.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:19 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:19 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:19 -0700
+
+
+Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:19 -0700
+
+
+Started DELETE "/votes/id?topic_id=4" for 127.0.0.1 at 2013-10-19 15:00:21 -0700
+Processing by VotesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yXe3j9qfAsCykINQqnCvGBqpzPTC7xZmRdU3lv1i6z8=", "topic_id"=>"4", "id"=>"id"}
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mVote Load (0.0ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."topic_id" = ? ORDER BY "votes"."id" ASC LIMIT 1  [["topic_id", 4]]
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 15:00:21 -0700
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:21 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:21 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:21 -0700
+
+
+Started GET "/assets/votes.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:21 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:21 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:21 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:21 -0700
+
+
+Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:21 -0700
+
+
+Started DELETE "/votes/id?topic_id=4" for 127.0.0.1 at 2013-10-19 15:00:22 -0700
+Processing by VotesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yXe3j9qfAsCykINQqnCvGBqpzPTC7xZmRdU3lv1i6z8=", "topic_id"=>"4", "id"=>"id"}
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mVote Load (1.0ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."topic_id" = ? ORDER BY "votes"."id" ASC LIMIT 1[0m  [["topic_id", 4]]
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 10ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 15:00:22 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 22ms (Views: 18.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:23 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:23 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:23 -0700
+
+
+Started GET "/assets/votes.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:23 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:23 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:23 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:23 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:23 -0700
+
+
+Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:23 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:23 -0700
+
+
+Started DELETE "/votes/id?topic_id=4" for 127.0.0.1 at 2013-10-19 15:00:24 -0700
+Processing by VotesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yXe3j9qfAsCykINQqnCvGBqpzPTC7xZmRdU3lv1i6z8=", "topic_id"=>"4", "id"=>"id"}
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mVote Load (0.0ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."topic_id" = ? ORDER BY "votes"."id" ASC LIMIT 1  [["topic_id", 4]]
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 15:00:24 -0700
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 20ms (Views: 17.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:24 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:24 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:24 -0700
+
+
+Started GET "/assets/votes.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:24 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:24 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:24 -0700
+
+
+Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:25 -0700
+
+
+Started DELETE "/votes/id?topic_id=4" for 127.0.0.1 at 2013-10-19 15:00:25 -0700
+Processing by VotesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yXe3j9qfAsCykINQqnCvGBqpzPTC7xZmRdU3lv1i6z8=", "topic_id"=>"4", "id"=>"id"}
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mVote Load (0.0ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."topic_id" = ? ORDER BY "votes"."id" ASC LIMIT 1[0m  [["topic_id", 4]]
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 22ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 15:00:25 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:25 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:25 -0700
+
+
+Started GET "/assets/votes.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:25 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:25 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:25 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:26 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:26 -0700
+
+
+Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:26 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:26 -0700
+
+
+Started DELETE "/votes/id?topic_id=4" for 127.0.0.1 at 2013-10-19 15:00:28 -0700
+Processing by VotesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yXe3j9qfAsCykINQqnCvGBqpzPTC7xZmRdU3lv1i6z8=", "topic_id"=>"4", "id"=>"id"}
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mVote Load (0.0ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."topic_id" = ? ORDER BY "votes"."id" ASC LIMIT 1  [["topic_id", 4]]
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 6ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 15:00:28 -0700
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 25ms (Views: 21.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:29 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:29 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:29 -0700
+
+
+Started GET "/assets/votes.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:29 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:29 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:29 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:29 -0700
+
+
+Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:29 -0700
+
+
+Started DELETE "/votes/id?topic_id=4" for 127.0.0.1 at 2013-10-19 15:00:30 -0700
+Processing by VotesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yXe3j9qfAsCykINQqnCvGBqpzPTC7xZmRdU3lv1i6z8=", "topic_id"=>"4", "id"=>"id"}
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mVote Load (0.0ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."topic_id" = ? ORDER BY "votes"."id" ASC LIMIT 1[0m  [["topic_id", 4]]
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 15:00:30 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 47ms (Views: 43.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:30 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:31 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:31 -0700
+
+
+Started GET "/assets/votes.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:31 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:31 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:31 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:31 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:31 -0700
+
+
+Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:31 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:31 -0700
+
+
+Started DELETE "/votes/id?topic_id=4" for 127.0.0.1 at 2013-10-19 15:00:36 -0700
+Processing by VotesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yXe3j9qfAsCykINQqnCvGBqpzPTC7xZmRdU3lv1i6z8=", "topic_id"=>"4", "id"=>"id"}
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mVote Load (0.0ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."topic_id" = ? ORDER BY "votes"."id" ASC LIMIT 1  [["topic_id", 4]]
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 15:00:36 -0700
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:36 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:36 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:36 -0700
+
+
+Started GET "/assets/votes.css?body=1" for 127.0.0.1 at 2013-10-19 15:00:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:36 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:36 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:36 -0700
+
+
+Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 15:00:36 -0700
+
+
+Started DELETE "/votes/id?topic_id=4" for 127.0.0.1 at 2013-10-19 15:01:09 -0700
+Processing by VotesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yXe3j9qfAsCykINQqnCvGBqpzPTC7xZmRdU3lv1i6z8=", "topic_id"=>"4", "id"=>"id"}
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mVote Load (1.0ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."topic_id" = ? ORDER BY "votes"."id" ASC LIMIT 1[0m  [["topic_id", 4]]
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 6ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 15:01:09 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 15:01:10 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-19 15:01:10 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-10-19 15:01:10 -0700
+
+
+Started GET "/assets/votes.css?body=1" for 127.0.0.1 at 2013-10-19 15:01:10 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 15:01:10 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 15:01:10 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 15:01:10 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-19 15:01:10 -0700
+
+
+Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 15:01:10 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 15:01:10 -0700
+
+
+Started POST "/votes?topic_id=4" for 127.0.0.1 at 2013-10-19 15:01:11 -0700
+Processing by VotesController#create as HTML
+  Parameters: {"authenticity_token"=>"yXe3j9qfAsCykINQqnCvGBqpzPTC7xZmRdU3lv1i6z8=", "topic_id"=>"4"}
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "votes" ("created_at", "topic_id", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 19 Oct 2013 22:01:11 UTC +00:00], ["topic_id", 4], ["updated_at", Sat, 19 Oct 2013 22:01:11 UTC +00:00]]
+  [1m[35m (38.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 58ms (ActiveRecord: 41.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 15:01:11 -0700
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 42ms (Views: 39.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 15:01:11 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-19 15:01:11 -0700
+
+
+Started GET "/assets/votes.css?body=1" for 127.0.0.1 at 2013-10-19 15:01:12 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-10-19 15:01:12 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 15:01:12 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 15:01:12 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 15:01:12 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-19 15:01:12 -0700
+
+
+Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 15:01:12 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 15:01:12 -0700
+
+
+Started DELETE "/votes/id?topic_id=4" for 127.0.0.1 at 2013-10-19 15:01:13 -0700
+Processing by VotesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yXe3j9qfAsCykINQqnCvGBqpzPTC7xZmRdU3lv1i6z8=", "topic_id"=>"4", "id"=>"id"}
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mVote Load (0.0ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."topic_id" = ? ORDER BY "votes"."id" ASC LIMIT 1[0m  [["topic_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."topic_id" = ? ORDER BY "votes"."id" ASC LIMIT 1  [["topic_id", 4]]
+  [1m[36mSQL (10.0ms)[0m  [1mDELETE FROM "votes" WHERE "votes"."id" = 38[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 18ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-19 15:01:13 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 22ms (Views: 18.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 15:01:13 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-19 15:01:13 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-10-19 15:01:13 -0700
+
+
+Started GET "/assets/votes.css?body=1" for 127.0.0.1 at 2013-10-19 15:01:13 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 15:01:13 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 15:01:13 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 15:01:13 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-19 15:01:13 -0700
+
+
+Started GET "/assets/votes.js?body=1" for 127.0.0.1 at 2013-10-19 15:01:13 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 15:01:13 -0700
